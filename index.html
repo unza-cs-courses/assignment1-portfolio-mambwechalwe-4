@@ -1,261 +1,287 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional portfolio website for [Your Name]">
-    <title>Portfolio - [Your Name]</title>
+    <title>CHARLES MAMBWE CHALWE - Web Developer Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!--
-    ============================================================
-    ASSIGNMENT 1: RESPONSIVE PORTFOLIO WEBSITE
-    CSC4035 Web Programming and Technologies
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    Instructions:
-    1. Complete all TODO sections below
-    2. Use semantic HTML5 elements
-    3. Ensure all images have alt attributes
-    4. Ensure all form inputs have labels
-    5. Test responsiveness at multiple breakpoints
-    ============================================================
-    -->
-
-    <!-- Navigation -->
-    <header class="header">
-        <nav class="nav">
-            <!-- TODO: Create navigation with links to each section
-                 Requirements:
-                 - Logo/site title
-                 - Navigation links (Home, About, Projects, Contact)
-                 - Mobile-friendly (hamburger menu optional)
-                 - Active state indication
-            -->
-            <div class="nav__logo">
-                <a href="#home">[Your Name]</a>
-            </div>
-            <ul class="nav__menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <header class="site-header">
+        <div class="logo">
+            <a href="#home" class="logo-link">CMC</a>
+        </div>
+        <nav id="main-nav" aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
-
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <!-- TODO: Create hero section
-                 Requirements:
-                 - Your name (h1)
-                 - Professional tagline
-                 - Call-to-action button
-                 - Consider using Flexbox for layout
-            -->
-            <div class="hero__content">
-                <h1>Your Name</h1>
-                <p class="hero__tagline">
-                    <!-- TODO: Add your professional tagline -->
-                    Web Developer | Designer | Problem Solver
-                </p>
-                <a href="#contact" class="btn btn--primary">Get In Touch</a>
+    
+    <main id="main-content">
+        <!-- HOME/HERO SECTION (Added as required) -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">CHARLES MAMBWE CHALWE</h1>
+                    <p class="hero-subtitle">Software Engineering Major | Passionate Coder | UI/UX Enthusiast</p>
+                    <p class="hero-description">I craft responsive, user-centered digital experiences with clean code and thoughtful design. Currently pursuing my degree at the University of Zambia.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/hero-illustration.svg" alt="Web developer illustration showing coding elements" class="hero-img">
+                </div>
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="about">
-            <!-- TODO: Create about section
-                 Requirements:
-                 - Section heading (h2)
-                 - Profile image with alt text
-                 - Professional bio (150+ words)
-                 - Skills list
-                 - Use CSS Grid or Flexbox for layout
-            -->
+        <!-- ABOUT SECTION (150+ words bio) -->
+        <section id="about" class="about-section">
             <div class="container">
-                <h2>About Me</h2>
-                <div class="about__content">
-                    <div class="about__image">
-                        <!-- TODO: Add your profile image -->
-                        <img src="images/profile-placeholder.jpg" alt="Profile photo of [Your Name]">
+                <h2 class="section-title">About Me</h2> 
+                <div class="about-content">
+                    <div class="about-image-wrapper">
+                        <img src="images/chalwe.png" alt="Charles Mambwe Chalwe - Profile Photo" class="profile-image">
                     </div>
-                    <div class="about__text">
-                        <p>
-                            <!-- TODO: Write your professional bio (150+ words)
-                                 Include:
-                                 - Your background
-                                 - Your interests in web development
-                                 - Your goals
-                                 - What makes you unique
-                            -->
-                            [Your professional bio goes here. Write at least 150 words about yourself,
-                            your background, your passion for web development, and your goals.
-                            This is your opportunity to introduce yourself to potential employers or clients.]
-                        </p>
-                        <h3>Skills</h3>
-                        <ul class="skills-list">
-                            <!-- TODO: Add your skills -->
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                            <li>Responsive Design</li>
-                            <!-- Add more skills -->
+                    <div class="about-text">
+                        <p>My name is <strong>CHARLES MAMBWE CHALWE</strong>, and I'm a passionate <strong>4th-year Computer Science student</strong> at the University of Zambia, proudly majoring in Software Engineering. My journey into web development began when I built my first website in high school, and I've been captivated by the endless possibilities of creating for the web ever since.</p>
+                        
+                        <p>I believe that great websites are not just visually appealing but also accessible, performant, and intuitive to use. My approach combines technical excellence with user-centered design principles to create digital experiences that make a difference. While I am currently building my skills in certain technologies, I have a strong affinity for <span class="highlight">phone applications</span> and <span class="highlight">web designs</span>.</p>
+
+                        <p>The love and passion for my ability to <em class="highlight">solve problems creatively</em> and build things that people can use and enjoy drives me forward. When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, mentoring fellow students, or enjoying a cold passion lemonade while learning from web development tutorials. I'm also an avid reader of tech blogs and design publications.</p>
+                        
+                        <div class="skills-container">
+                            <h3 class="skills-heading">Technical Skills</h3>
+                            <ul class="skills-list-detailed">
+                                <li><span class="skill-category">Frontend:</span> HTML5, CSS3, JavaScript, React</li>
+                                <li><span class="skill-category">Backend:</span> Python, Java, Node.js</li>
+                                <li><span class="skill-category">Database:</span> MySQL, SQLite, MongoDB</li>
+                                <li><span class="skill-category">Tools:</span> Git, VS Code, Figma, Adobe XD</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION (as cards) -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2 class="section-title">My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>Database Management</h3>
+                        <p>MySQL, SQLite, MongoDB</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Python</h3>
+                        <p>Python Basics, OOP, Functions, Django</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Java</h3>
+                        <p>OOP, Arrays, Design Patterns, Multithreading</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Web Design</h3>
+                        <p>HTML5, CSS3, Responsive Design, UI/UX</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Problem Solving</h3>
+                        <p>Creative Solutions, Algorithms, Debugging</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Software Engineering</h3>
+                        <p>4th Year Major, Agile, SDLC</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION (4 project cards) -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Projects Worked On</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="images/project-library.jpg" alt="Library Management System dashboard" class="project-image">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Library Management System</h3>
+                            <p class="project-description">A comprehensive desktop application for managing library operations including cataloging, circulation, member management, and reporting. Features real-time book availability tracking and automated notifications.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Swing</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-small">Live Demo</a>
+                                <a href="#" class="btn btn-small btn-outline">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="images/project-pos.jpg" alt="Bookstore POS system" class="project-image">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Bookstore POS System</h3>
+                            <p class="project-description">A point-of-sale system designed specifically for bookstores, handling inventory management, sales transactions, customer loyalty programs, and detailed sales analytics with barcode scanning integration.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">SQLite</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-small">Live Demo</a>
+                                <a href="#" class="btn btn-small btn-outline">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="images/project-weather.jpg" alt="Weather Dashboard app" class="project-image">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Weather Dashboard</h3>
+                            <p class="project-description">A responsive weather application that displays current conditions and 5-day forecasts for any location. Features include location search, interactive maps, unit conversion, and weather alerts using a third-party API.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">API</span>
+                                <span class="tech-tag">CSS3</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-small">Live Demo</a>
+                                <a href="#" class="btn btn-small btn-outline">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="images/project-portfolio.jpg" alt="Portfolio website" class="project-image">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Responsive Portfolio</h3>
+                            <p class="project-description">A modern, fully responsive portfolio website built with semantic HTML5 and CSS3. Showcases advanced layout techniques including CSS Grid, Flexbox, custom properties, and smooth animations with a mobile-first approach.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">Flexbox</span>
+                                <span class="tech-tag">Grid</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-small">Live Demo</a>
+                                <a href="#" class="btn btn-small btn-outline">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION with complete form -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Contact Me</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <p>I'm always interested in hearing about new opportunities, collaborations, or just having a chat about technology and design. Feel free to reach out through any of these channels.</p>
+                        <ul class="contact-details">
+                            <li><strong>Email:</strong> <a href="mailto:chalwemambwe4@gmail.com">chalwemambwe4@gmail.com</a></li>
+                            <li><strong>GitHub:</strong> <a href="https://github.com/mambwechalwe-4">github.com/mambwechalwe-4</a></li>
+                            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/mambwechalwe">linkedin.com/in/mambwechalwe</a></li>
+                            <li><strong>X:</strong> <a href="https://twitter.com/mambwechalwe">@mambwechalwe</a></li>
                         </ul>
+                        <div class="social-links">
+                            <a href="https://github.com/mambwechalwe-4" class="social-link" aria-label="GitHub">GitHub</a>
+                            <a href="https://linkedin.com/in/mambwechalwe" class="social-link" aria-label="LinkedIn">LinkedIn</a>
+                            <a href="https://twitter.com/mambwechalwe" class="social-link" aria-label="X">X</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-wrapper">
+                        <h3>Send a Message</h3>
+                        <form action="#" method="post" class="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="name">Full Name <span aria-hidden="true">*</span></label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="chalwemambwe4@gmail.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject">
+                                    <option value="">Please select a subject</option>  
+                                    <option value="general">General Inquiry</option>
+                                    <option value="project">Project Collaboration</option>
+                                    <option value="job">Job Opportunity</option>
+                                    <option value="feedback">Website Feedback</option>
+                                    <option value="mentorship">Mentorship Request</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message <span aria-hidden="true">*</span></label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <label for="newsletter">Subscribe to my newsletter</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                            <p class="required-note"><small><span aria-hidden="true">*</span> Required fields</small></p>
+                        </form>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="projects">
-            <!-- TODO: Create projects section
-                 Requirements:
-                 - Section heading (h2)
-                 - Minimum 3 project cards
-                 - Each card: image, title, description, link(s)
-                 - Use CSS Grid for card layout
-            -->
-            <div class="container">
-                <h2>My Projects</h2>
-                <div class="projects__grid">
-                    <!-- Project Card 1 -->
-                    <article class="project-card">
-                        <!-- TODO: Replace with your project -->
-                        <img src="images/project1-placeholder.jpg" alt="Screenshot of Project 1">
-                        <div class="project-card__content">
-                            <h3>Project Title 1</h3>
-                            <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
-                            </p>
-                            <div class="project-card__links">
-                                <a href="#" class="btn btn--small">Live Demo</a>
-                                <a href="#" class="btn btn--small btn--outline">GitHub</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project Card 2 -->
-                    <article class="project-card">
-                        <!-- TODO: Replace with your project -->
-                        <img src="images/project2-placeholder.jpg" alt="Screenshot of Project 2">
-                        <div class="project-card__content">
-                            <h3>Project Title 2</h3>
-                            <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
-                            </p>
-                            <div class="project-card__links">
-                                <a href="#" class="btn btn--small">Live Demo</a>
-                                <a href="#" class="btn btn--small btn--outline">GitHub</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project Card 3 -->
-                    <article class="project-card">
-                        <!-- TODO: Replace with your project -->
-                        <img src="images/project3-placeholder.jpg" alt="Screenshot of Project 3">
-                        <div class="project-card__content">
-                            <h3>Project Title 3</h3>
-                            <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
-                            </p>
-                            <div class="project-card__links">
-                                <a href="#" class="btn btn--small">Live Demo</a>
-                                <a href="#" class="btn btn--small btn--outline">GitHub</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- TODO: Add more project cards if desired -->
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <!-- TODO: Create contact section
-                 Requirements:
-                 - Section heading (h2)
-                 - Contact form with:
-                   - Name field (required)
-                   - Email field (required, type="email")
-                   - Message textarea (required)
-                   - Submit button
-                 - All inputs must have associated labels
-                 - Use HTML5 validation attributes
-            -->
-            <div class="container">
-                <h2>Contact Me</h2>
-                <form class="contact__form" action="#" method="POST">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            required
-                            placeholder="Your Name"
-                            minlength="2"
-                        >
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            required
-                            placeholder="your.email@example.com"
-                        >
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input
-                            type="text"
-                            id="subject"
-                            name="subject"
-                            placeholder="What is this regarding?"
-                        >
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea
-                            id="message"
-                            name="message"
-                            required
-                            rows="5"
-                            placeholder="Your message..."
-                            minlength="10"
-                        ></textarea>
-                    </div>
-                    <button type="submit" class="btn btn--primary">Send Message</button>
-                </form>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <!-- TODO: Create footer
-             Requirements:
-             - Copyright notice
-             - Social media links (optional)
-             - Back to top link (optional)
-        -->
-        <div class="container">
-            <p>&copy; 2025 [Your Name]. All rights reserved.</p>
-            <nav class="footer__social">
-                <!-- TODO: Add your social media links -->
-                <a href="#" aria-label="GitHub">GitHub</a>
-                <a href="#" aria-label="LinkedIn">LinkedIn</a>
-                <a href="#" aria-label="Twitter">Twitter</a>
-            </nav>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>&copy; 2026 CHARLES MAMBWE CHALWE. All rights reserved.</p>
+                <p class="footer-note">Built with semantic HTML5 and CSS3 for accessibility</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p class="credit">Designed and developed by Charles Mambwe Chalwe</p>
         </div>
     </footer>
+
+    <div class="theme-toggle">
+        <input type="checkbox" id="dark-mode-toggle" class="theme-toggle-checkbox">
+        <label for="dark-mode-toggle" class="theme-toggle-label" aria-label="Toggle dark mode">
+            <span class="theme-toggle-icon">🌙</span>
+        </label>
+    </div>
 </body>
 </html>
